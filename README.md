@@ -1,4 +1,4 @@
-## PEPAdb online database
+## PEPAdb cartographic viewer
 
 # Introduction
 
