@@ -1,0 +1,250 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@400&display=swap');
+
+* {
+  font-family: "Barlow", sans-serif;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+#map {
+  flex: 1;
+  width: 100%;
+}
+
+ /* Custom styles for the popup content */
+ .custom-popup {
+    max-width: 300px;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #ECF0F1;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+.popup-title {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+.popup-attribute {
+    margin-bottom: 4px;
+}
+
+/* Add this to your CSS */
+.btn-secondary {
+    margin-top: 15px;
+    padding: 5px 10px; /* Adjust the padding as needed to make the button thinner */
+    font-size: 12px; /* Adjust the font size as needed */
+    
+    /* Add any other styles you want to customize the button appearance */
+}
+
+/* Add your custom CSS styles for the legend here */
+.legend {
+    padding: 10px;
+    font-size: 14px;
+    line-height: 18px;
+    color: #555;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+
+  .legend-point {
+    display: flex;
+    padding-top: 10px;
+    width: 12px;
+    height: 12px;
+    border: 1px solid #424949;
+    background-color: #424949;
+    border-radius: 50%;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .legend-title {
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+
+   /* Remove outline color when clicking on the buttons */
+   .btn-secundary:active,
+   .btn-secundary:focus {
+       outline-color: transparent !important;
+   }
+
+    /* Remove outline color when clicking on the "Download CSV" and "Download GeoJSON" button */
+    .btn.btn-secondary:active,
+    .btn.btn-secondary:focus {
+        outline-color: transparent !important;
+    }
+
+    footer {
+      width: 100%;
+      
+  }
+
+/* CSS for the upload panel */
+#uploadPanel {
+  position: fixed; /* Position the panel fixed on the viewport */
+  top: 250px; /* Adjust the top distance from the top of the viewport */
+  right: 20px; /* Adjust the left distance from the left of the viewport */
+  z-index: 1000; /* Set a high z-index to ensure it appears above other content */
+  background-color: #EAECEE; /* Adjust background color as needed */
+  padding: 10px; /* Adjust padding as needed */
+  border-radius: 5px; /* Add border radius for rounded corners */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add box shadow for depth */
+  max-width: 300px; /* Limit the maximum width of the panel */
+}
+
+/* CSS for the panel title */
+#uploadPanel h2 {
+  text-align: center;
+  margin-bottom: 10px; /* Adjust spacing between title and upload button */
+  font-size: 18px; /* Adjust font size as needed */
+  color: #000; /* Adjust color as needed */
+}
+
+  #uploadButton {
+    font-family: "Barlow", sans-serif;
+    display: block;
+    margin: 10px auto; /* Adjusted margin */
+    padding: 5px 10px; /* Adjusted padding */
+    background-color: #7F8C8D;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+#uploadButton:hover {
+    background-color: #3f3d3f;
+}
+#fileInput {
+    display: none;
+}
+
+/* CSS styles for the filter icon */
+#filterIcon {
+  position: fixed;
+  top: 270px;
+  left: 10px;
+  height: 34px;
+  width: 34px;
+  z-index: 1001; /* Ensure the icon is above the map */
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 5px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center; /* Center vertically */
+  border-color: grey;
+}
+
+#filterIcon .fa-filter:hover {
+  background-color: #fafafa;
+  opacity: 0.7;
+}
+
+
+/* CSS styles for the filter panel */
+.filter-panel {
+  display: none; /* Initially hide the panel */
+  position: absolute;
+  top: 40%;
+  left: 10%;
+  z-index: 1000;
+  background-color: #EAECEE;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  width: 300px; /* Adjust width as needed */
+  text-align: center; /* Center the content */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add shadow for better visibility */
+}
+
+.filter-panel table {
+  width: 100%;
+}
+
+.filter-panel table td {
+  padding: 5px;
+}
+
+.filter-panel label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.filter-panel button {
+  background-color: #7F8C8D;
+  color: #fff;
+  border: none;
+  padding: 8px 12px;
+  cursor: pointer;
+  border-radius: 5px;
+  margin: 5px;
+}
+
+.filter-panel button:hover {
+  background-color: #3f3d3f;
+}
+
+/* Style the specific td with a different background color */
+.special-td {
+  background-color: #D5D8DC; /* Yellow */
+}
+
+.btn-no-shadow {
+  box-shadow: none !important;
+}
+
+#applyFilterBtn {
+  font-family: "Barlow", sans-serif;
+  
+  margin: 10px auto; /* Adjusted margin */
+  padding: 5px 10px; /* Adjusted padding */
+  background-color: #7F8C8D;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+#applyFilterBtn:hover {
+  background-color: #3f3d3f;
+}
+
+#removeFilterBtn {
+  font-family: "Barlow", sans-serif;
+  
+  margin: 10px auto; /* Adjusted margin */
+  padding: 5px 10px; /* Adjusted padding */
+  background-color: #7F8C8D;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+#removeFilterBtn:hover {
+  background-color: #3f3d3f;
+}
+
+#downloadGeoJsonBtn {
+  font-family: "Barlow", sans-serif;
+  
+  margin: 10px auto; /* Adjusted margin */
+  padding: 5px 10px; /* Adjusted padding */
+  background-color: #7F8C8D;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+#downloadGeoJsonBtn:hover {
+  background-color: #3f3d3f;
+}
+
