@@ -103,7 +103,7 @@ function shouldIncludeAttribute(attribute, value) {
 // CSV ATTRIBUTES DOWNLOAD
 
 // Fetch GeoJSON data from GeoServer WFS using the Fetch API
-fetch('https://pepadb.us.es:8080/geoserver/pepadbus/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=pepadbus%3Astructures_rawmaterial&maxFeatures=1000000&outputFormat=application%2Fjson')
+fetch('https://pepadb.us.es/geoserver/pepadbus/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=pepadbus%3Astructures_rawmaterial&maxFeatures=1000000&outputFormat=application%2Fjson')
     .then(response => response.json())
     .then(data => {
         // Create GeoJSON layer with custom popup
@@ -535,7 +535,6 @@ function downloadGeoJson() {
     document.body.removeChild(a);
     URL.revokeObjectURL(url);
 }
-
 
 //MATERIAL FILTER   
 
