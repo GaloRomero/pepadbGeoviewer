@@ -46,7 +46,7 @@ const attributeMapping = {
 async function downloadCSV(featureId) {
     try {
         // Fetch the GeoJSON data again to ensure it's up-to-date
-        const response = await fetch('http://pepadb.us.es:8080/geoserver/pepadbus/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=pepadbus%3Astructures_rawmaterial&maxFeatures=1000000&outputFormat=application%2Fjson');
+        const response = await fetch('https://pepadb.us.es:8080/geoserver/pepadbus/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=pepadbus%3Astructures_rawmaterial&maxFeatures=1000000&outputFormat=application%2Fjson');
         const data = await response.json();
 
         // Find the feature by ID
@@ -103,7 +103,7 @@ function shouldIncludeAttribute(attribute, value) {
 // CSV ATTRIBUTES DOWNLOAD
 
 // Fetch GeoJSON data from GeoServer WFS using the Fetch API
-fetch('http://pepadb.us.es:8080/geoserver/pepadbus/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=pepadbus%3Astructures_rawmaterial&maxFeatures=1000000&outputFormat=application%2Fjson')
+fetch('https://pepadb.us.es:8080/geoserver/pepadbus/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=pepadbus%3Astructures_rawmaterial&maxFeatures=1000000&outputFormat=application%2Fjson')
     .then(response => response.json())
     .then(data => {
         // Create GeoJSON layer with custom popup
@@ -547,7 +547,5 @@ function updateFilterIconPosition() {
     filterIcon.style.left = '100px'; // Set left position
     filterIcon.style.top = '270px'; // Set top position
 }
-
-
 
 // FILTER ICON
