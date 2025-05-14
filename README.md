@@ -42,7 +42,7 @@ This is a cartographic viewer showing the number of inventory items grouped by r
 
 - Project leader: Carlos P. Odriozola Lloret (codriozola@us.es)
 
-- Data curator: Galo Romero García (galorom@us.es)
+- Data curator: Galo Romero García (galoromerogarcia@gmail.com)
 
 # Legal and Licensing Information
 
