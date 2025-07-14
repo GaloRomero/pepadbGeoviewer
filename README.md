@@ -8,8 +8,6 @@ The implementation of these procedures, within a rigorous policy of data curatio
 
 It is a free and accessible web-based tool that provides users with Late Prehistoric funded research spatial and non-spatial data of PEPAdb (Prehistoric Europe’s Personal Adornment database) project.
 
-![Alt text](https://pepadb.us.es/documentation/pepadb_db2.png)
-
 It can be accessed through the following URL: https://pepadb.us.es/geoviewer/map.html
 
 # What kind of data do we share?
@@ -17,12 +15,6 @@ It can be accessed through the following URL: https://pepadb.us.es/geoviewer/map
 The PEPAdb project focuses on the elements of personal adornment in Late prehistory, made from rare and exotic raw materials, and how their production, distribution and consumption were articulated, as well as their relationship to the incessant process of change in the structure of socio-economic relations.
 
 The raw and processed data are available both on the official PEPAdb website (https://pepadb.us.es/#opendata) and in a Zenodo (https://zenodo.org/records/10545573).
-
-# Pipeline 
-
-The flow chart illustrates this entire methodological process.
-
-![Alt text](https://pepadb.us.es/documentation/pipeline2.png)
 
 # Graphical User Interface (GUI) and user guide
 
