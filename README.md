@@ -8,7 +8,7 @@ The implementation of these procedures, within a rigorous policy of data curatio
 
 It is a free and accessible web-based tool that provides users with Late Prehistoric funded research spatial and non-spatial data of PEPAdb (Prehistoric Europe’s Personal Adornment database) project.
 
-It can be accessed through the following URL: https://pepadb.us.es/geoviewer/map.html
+It can be accessed through the following URL: https://pepadb.us.es/geoviewer
 
 # What kind of data do we share?
 
